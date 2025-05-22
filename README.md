@@ -1,16 +1,26 @@
-👋 Hi,
-I'm Anu Mandava, I'm a Business Intelligence Developer based in Toronto ON, Canada.
-can reach me at 📫 anumandava2@gmail.com or Connect with at https://www.linkedin.com/in/anu-mandava-410331155/
+<h1 style="color:#1E90FF;">👋 Hi, I'm Anu Mandava</h1>
 
-👩‍💻 ABOUT ME
-7 years of experience turning raw data into meaningful business insights. I specialize in building scalable cloud-based data pipelines, crafting interactive Power BI dashboards, and driving data-driven decision-making.
+<p style="font-size:16px;">
+Im a Business Intelligence Developer based in <b>Toronto, ON, Canada</b>.
+</p>
 
-🚀 What I Do
-Design and optimize end-to-end ETL pipelines using Azure Data Factory, Azure Databricks, and PySpark  
-Develop dynamic and insightful Power BI dashboards with advanced DAX calculations  
-Migrate legacy BI systems to modern Azure platforms with a focus on data governance and security (RLS)
-Automate workflows and enhance data quality using Python, PowerShell, and Azure DevOps  
-Collaborate closely with cross-functional teams to translate business needs into actionable analytics
+<p>
+📫 Reach me at <a href="mailto:anumandava2@gmail.com" style="color:#0066cc; text-decoration:none;">Email me</a> |  
+🔗 Connect with me <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank" style="color:#0077b5; text-decoration:none;">LinkedIn</a>
+</p>
 
-🔧 Tech Stack
-Azure Data Factory | Power BI | PySpark | SQL Server | SSIS | SSAS | Azure Synapse | DAX | Python | Snowflake | Tableau
+<hr>
+
+<h2 style="color:#32CD32;">👩‍💻 About Me</h2>
+<p style="font-size:15px; color:#333;">
+7+ years of experience turning raw data into meaningful business insights. I specialize in building scalable cloud-based data pipelines, crafting interactive Power BI dashboards, and driving data-driven decision-making.
+</p>
+
+<hr>
+
+<h2 style="color:#FF8C00;">🚀 What I Do</h2>
+<ul style="font-size:15px; color:#444;">
+  <li>Design and optimize end-to-end ETL pipelines using <b>Azure Data Factory</b>, <b>Azure Databricks</b>, and <b>PySpark</b></li>
+  <li>Develop dynamic Power BI dashboards with advanced <b>DAX</b> calculations</li>
+  <li>Migrate legacy BI systems to modern Azure platforms with data governance & security (RLS)</li>
+  <li>Automate workflows & enhance data quality using <b>Python</b>, <b>Power BI
