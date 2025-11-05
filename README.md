@@ -21,7 +21,13 @@ Im a Business Intelligence Developer based in <b>Toronto, ON, Canada</b>.
 
 <h2 style="color:#FF8C00;">🚀 What I Do</h2>
 <ul style="font-size:15px; color:#444;">
+  <ul style="font-size:15px; color:#444;">
   <li>Design and optimize end-to-end ETL pipelines using <b>Azure Data Factory</b>, <b>Azure Databricks</b>, and <b>PySpark</b></li>
-  <li>Develop dynamic Power BI dashboards with advanced <b>DAX</b> calculations</li>
-  <li>Migrate legacy BI systems to modern Azure platforms with data governance & security (RLS)</li>
-  <li>Automate workflows & enhance data quality using <b>Python</b>, <b>Power BI
+  <li>Develop interactive Power BI dashboards with advanced <b>DAX</b> calculations</li>
+  <li>Migrate legacy BI systems to modern Azure platforms ensuring data governance & security (RLS)</li>
+  <li>Automate workflows & improve data quality using <b>Python</b> and <b>Power BI</b></li>
+  <li>Manage tasks and sprints efficiently using <b>Jira</b> and track issues via <b>ServiceNow</b></li>
+  <li>Handle <b>Problem Management</b> and <b>Change Management</b> to maintain stable BI operations</li>
+  <li>Collaborate with cross-functional teams to deliver data-driven insights and solutions</li>
+</ul>
+
