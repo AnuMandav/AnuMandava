@@ -74,7 +74,6 @@
     margin-bottom: 12px;
     font-size: 16px;
   }
-
   /* Button */
   .btn {
     display: inline-block;
