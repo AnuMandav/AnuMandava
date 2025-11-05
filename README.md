@@ -7,6 +7,7 @@ Im a Business Intelligence Developer based in <b>Toronto, ON, Canada</b>.
 <p>
 📫 Reach me at <a href="mailto:anumandava2@gmail.com" style="color:#0066cc; text-decoration:none;">Email me</a> |  
 🔗 Connect with me <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank" style="color:#0077b5; text-decoration:none;">LinkedIn</a>
+🧠 GitHub: <a href="https://github.com/anumandava" target="_blank" style="color:#333; text-decoration:none;">anumandava</a>
 </p>
 
 <hr>
