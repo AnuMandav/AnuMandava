@@ -14,7 +14,7 @@ Im a Business Intelligence Developer based in <b>Toronto, ON, Canada</b>.
 
 <h2 style="color:#32CD32;">👩‍💻 About Me</h2>
 <p style="font-size:15px; color:#333;">
-7+ years of experience turning raw data into meaningful business insights. I specialize in building scalable cloud-based data pipelines, crafting interactive Power BI dashboards, and driving data-driven decision-making.
+I’m a Business Intelligence Developer with 7+ years of experience turning raw data into meaningful insights. I build scalable data pipelines, craft interactive Power BI dashboards, and drive data-driven decisions. Skilled in Azure Data Factory, Databricks, PySpark, Python, and modern BI platforms, I also excel in Jira, Snow, problem management, and change management. I love solving complex business problems with clean, efficient data solutions.
 </p>
 
 <hr>
