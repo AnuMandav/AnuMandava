@@ -5,10 +5,8 @@ I'm a Senior Data Engineer and Business Intelligence Developer based in <b>Toron
 </p>
 
 <p>
-📫 Reach me at <a href="mailto:anumandava2@gmail.com" style="color:#0066cc; text-decoration:none;">Email me</a> |  
-  
-🔗 Connect on <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank" style="color:#0077b5; text-decoration:none;">LinkedIn</a> |  
-
+📫 Reach me at <a href="mailto:anumandava2@gmail.com" style="color:#0066cc; text-decoration:none;">Email me</a> |      
+🔗 Connect on <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank" style="color:#0077b5; text-decoration:none;">LinkedIn</a> |      
 💻 GitHub: <a href="https://github.com/anumandava" target="_blank" style="color:#333; text-decoration:none;">anumandava</a>
 
 </p>
