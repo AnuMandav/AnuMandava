@@ -24,11 +24,13 @@ I have collaborated with Marketing, Growth, Finance, and Product teams to optimi
 <h2 style="color:#FF8C00;">🚀 What I Do</h2>
 <ul style="font-size:15px; color:#444;">
   <li>Design and optimize end-to-end ETL/ELT pipelines using <b>Azure Data Factory</b>, <b>Databricks</b>, <b>SSIS</b>, and <b>PySpark</b></li>
-  <li>Develop interactive Power BI dashboards and semantic models with advanced <b>DAX</b> calculations and Row-Level Security (RLS)</li>
+  <li>Develop interactive Power BI dashboards and semantic models with advanced <b>DAX</b> measures, Row-Level Security (RLS), and write-back functionality</li>
   <li>Migrate on-premise and legacy BI systems to modern cloud platforms like <b>Microsoft Fabric</b> and <b>Azure Synapse Analytics</b></li>
-  <li>Implement CI/CD, automation, and monitoring pipelines for reliable, scalable data solutions</li>
-  <li>Collaborate with cross-functional teams to define KPIs, build self-service dashboards, and deliver actionable insights</li>
-  <li>Ensure data governance, security, and compliance across enterprise BI environments</li>
+  <li>Create data models, OLAP cubes, and star/snowflake schemas to support fast, accurate analytics</li>
+  <li>Automate reports, alerts, and workflows to save time and improve efficiency</li>
+  <li>Analyze marketing, sales, and operational data to improve engagement, retention, and ROI</li>
+  <li>Implement CI/CD pipelines, governance, and data security for reliable, scalable data solutions</li>
+  <li>Collaborate with cross-functional teams to define KPIs, deliver actionable insights, and support business decisions</li>
 </ul>
 
 <hr>
