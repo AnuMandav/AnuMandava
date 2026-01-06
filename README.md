@@ -1,38 +1,72 @@
-<h1 style="color:#1E90FF;">👋 Hi, I'm Anu Mandava</h1>
-
-<p style="font-size:16px;">
-I'm a Senior Data Engineer and Business Intelligence Developer based in <b>Toronto, ON, Canada</b>, with 7+ years of experience transforming complex data into actionable insights for business growth and operational excellence.
+<h1 align="center" style="color:#1E90FF;">👋 Hi, I'm Anu Mandava</h1>
+<p align="center">
+Senior Data Engineer | BI Developer | Data & Analytics Enthusiast
 </p>
 
-<p>
-📫 Reach me at <a href="mailto:anumandava2@gmail.com" style="color:#0066cc; text-decoration:none;">Email me</a> |      
-🔗 Connect on <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank" style="color:#0077b5; text-decoration:none;">LinkedIn</a> |      
-💻 GitHub: <a href="https://github.com/anumandava" target="_blank" style="color:#333; text-decoration:none;">anumandava</a>
-
+<p align="center">
+📫 <a href="mailto:anumandava2@gmail.com">Email Me</a> | 
+🔗 <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank">LinkedIn</a> | 
+💻 <a href="https://github.com/anumandava" target="_blank">GitHub</a>
 </p>
 
-<hr>
+---
 
-<h2 style="color:#32CD32;">👩‍💻 About Me</h2>
-<p style="font-size:15px; color:#333;">
-I specialize in building scalable data pipelines, designing interactive dashboards, and implementing cloud-based data solutions that drive business decisions. Experienced across Microsoft Fabric, Azure Data Factory, Databricks, Power BI, SSIS, and SQL, I help organizations translate raw data into meaningful insights.  
-I have collaborated with Marketing, Growth, Finance, and Product teams to optimize performance, improve ROI, and streamline reporting. My work spans ETL/ELT, data modeling, analytics, and automation, with a focus on governance, security, and efficient data architecture.
+## 👩‍💻 About Me
+I'm a Senior Data Engineer and BI Developer based in **Toronto, ON, Canada**, with 7+ years of experience delivering actionable insights from complex data.  
+I specialize in **data pipelines, cloud solutions, interactive dashboards, and analytics automation**.  
+I help organizations **optimize business decisions, improve ROI, and enable self-service analytics**.  
+
+---
+
+## 🚀 What I Do
+- Design & optimize ETL/ELT pipelines using **Azure Data Factory, Databricks, SSIS, PySpark**
+- Develop interactive **Power BI dashboards** with advanced DAX, RLS, and write-back functionality
+- Migrate legacy BI systems to **Microsoft Fabric, Azure Synapse Analytics, and Data Lake architectures**
+- Build **data models, OLAP cubes**, and star/snowflake schemas to support analytics
+- Automate reports & workflows to save time and improve efficiency
+- Analyze marketing, sales, and operational data to improve **engagement, retention, and ROI**
+- Implement CI/CD pipelines, governance, and data security
+- Collaborate with cross-functional teams to define KPIs and deliver actionable insights
+
+---
+
+## 💻 Tech Stack
+<p align="left">
+<img src="https://img.shields.io/badge/SQL-3472A6?style=for-the-badge&logo=Microsoft-SQL-Server&logoColor=white" /> 
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white" />
+<img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=Microsoft-Azure&logoColor=white" />
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=Power-BI&logoColor=white" />
+<img src="https://img.shields.io/badge/SSIS-CC2927?style=for-the-badge&logo=Microsoft-SQL-Server&logoColor=white" />
+<img src="https://img.shields.io/badge/SSRS-CC2927?style=for-the-badge&logo=Microsoft-SQL-Server&logoColor=white" />
+<img src="https://img.shields.io/badge/Databricks-FC4C02?style=for-the-badge&logo=Databricks&logoColor=white" />
 </p>
 
-<hr>
+---
 
-<h2 style="color:#FF8C00;">🚀 What I Do</h2>
-<ul style="font-size:15px; color:#444;">
-  <li>Design and optimize end-to-end ETL/ELT pipelines using <b>Azure Data Factory</b>, <b>Databricks</b>, <b>SSIS</b>, and <b>PySpark</b></li>
-  <li>Develop interactive Power BI dashboards and semantic models with advanced <b>DAX</b> measures, Row-Level Security (RLS), and write-back functionality</li>
-  <li>Migrate on-premise and legacy BI systems to modern cloud platforms like <b>Microsoft Fabric</b> and <b>Azure Synapse Analytics</b></li>
-  <li>Create data models, OLAP cubes, and star/snowflake schemas to support fast, accurate analytics</li>
-  <li>Automate reports, alerts, and workflows to save time and improve efficiency</li>
-  <li>Analyze marketing, sales, and operational data to improve engagement, retention, and ROI</li>
-  <li>Implement CI/CD pipelines, governance, and data security for reliable, scalable data solutions</li>
-  <li>Collaborate with cross-functional teams to define KPIs, deliver actionable insights, and support business decisions</li>
-</ul>
+## 📂 Projects
+Here you can showcase your work (replace with your links or screenshots):
 
-<hr>
+1. **Power BI Marketing Dashboard** – Analyzed funnel performance & campaign ROI  
+2. **Azure Data Pipeline for Clinical Trials** – Migrated on-premise systems to Microsoft Fabric  
+3. **Sales Analytics Dashboard** – Real-time e-Commerce insights using Power BI & Databricks  
 
+> ⚡ Tip: Use GitHub Pages or GIFs/screenshots to make dashboards interactive.
 
+---
+
+## 🏆 Achievements
+- Automated reporting processes, saving ~24 hours per week  
+- Migrated multiple legacy BI systems to Microsoft Fabric & Azure Synapse  
+- Delivered dashboards for Finance, Marketing, and Clinical trials with measurable ROI improvements  
+
+---
+
+## 💡 Fun Fact
+When I’m not working on data projects, I enjoy **exploring new BI tools, automating workflows**, and making insights more **accessible to everyone**.
+
+---
+
+## 📫 Contact Me
+- Email: [anumandava2@gmail.com](mailto:anumandava2@gmail.com)  
+- LinkedIn: [linkedin.com/in/anu-mandava-410331155](https://www.linkedin.com/in/anu-mandava-410331155/)  
+- GitHub: [github.com/anumandava](https://github.com/anumandava)
