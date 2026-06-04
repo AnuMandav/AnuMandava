@@ -7,147 +7,118 @@
 </head>
 <body>
 
+<!-- Top Right Hover Menu -->
+<div class="top-right-menu">
+  <button class="menu-btn">☰</button>
+  <div class="menu-dropdown">
+    <a href="#">Convert to PDF</a>
+    <a href="#">Summarize with AI</a>
+    <a href="#">Ask AI about page</a>
+  </div>
+</div>
+
+<!-- Hero Section with Down Arrow and HOME button -->
 <header class="hero">
   <h1>Anu Mandava</h1>
   <div class="tagline">Senior Business Intelligence Engineer</div>
   <div class="bio">📍 Toronto, Ontario, Canada</div>
   <div class="bio">Azure • Microsoft Fabric • Power BI</div>
+  
+  <div class="down-arrow" id="downArrow">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M19 12l-7 7-7-7"/>
+    </svg>
+  </div>
+  
+  <button class="home-btn" id="homeBtn">HOME</button>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p style="color: #cbd5e1; font-size: 16px; max-width: 800px;">
-    Experienced BI Developer and Data Engineer with 7+ years of experience delivering data-driven insights across healthcare, insurance, retail, workforce management, and customer analytics domains. Specialized in Microsoft Fabric, Power BI, Azure Data Services, and enterprise analytics solutions.
-  </p>
-</section>
+<!-- Main Content (vanishes on scroll) -->
+<main class="main-content" id="mainContent">
+  <section>
+    <h2>About Me</h2>
+    <p style="color: #cbd5e1; font-size: 16px; max-width: 800px;">
+      Experienced BI Developer and Data Engineer with 7+ years of experience delivering data-driven insights across healthcare, insurance, retail, workforce management, and customer analytics domains. Specialized in Microsoft Fabric, Power BI, Azure Data Services, and enterprise analytics solutions.
+    </p>
+  </section>
 
-<section>
-  <h2>Technical Expertise</h2>
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>Healthcare Analytics</h3>
-      <p>
-        HIPAA-compliant clinical and healthcare reporting solutions supporting research operations, regulatory reporting, and enterprise analytics.
-      </p>
-      <div class="tech-badges">
-        <span>Microsoft Fabric</span>
-        <span>Power BI</span>
-        <span>Azure</span>
+  <section>
+    <h2>Technical Expertise</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Healthcare Analytics</h3>
+        <p>HIPAA-compliant clinical and healthcare reporting solutions supporting research operations, regulatory reporting, and enterprise analytics.</p>
+        <div class="tech-badges"><span>Microsoft Fabric</span><span>Power BI</span><span>Azure</span></div>
+      </div>
+      <div class="project-card">
+        <h3>Insurance Analytics</h3>
+        <p>Workforce planning, compensation reporting, executive KPI dashboards, and HR analytics solutions for enterprise organizations.</p>
+        <div class="tech-badges"><span>Power BI</span><span>DAX</span><span>Azure Synapse</span></div>
+      </div>
+      <div class="project-card">
+        <h3>Retail & Workforce Analytics</h3>
+        <p>Store performance reporting, workforce optimization dashboards, operational metrics, and staffing analytics solutions.</p>
+        <div class="tech-badges"><span>SQL</span><span>Power BI</span><span>Azure Data Factory</span></div>
+      </div>
+      <div class="project-card">
+        <h3>Marketing & Customer Analytics</h3>
+        <p>Customer acquisition, retention, campaign ROI reporting, funnel analytics, and business intelligence solutions.</p>
+        <div class="tech-badges"><span>Power BI</span><span>Python</span><span>Analytics</span></div>
       </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>Insurance Analytics</h3>
-      <p>
-        Workforce planning, compensation reporting, executive KPI dashboards, and HR analytics solutions for enterprise organizations.
-      </p>
-      <div class="tech-badges">
-        <span>Power BI</span>
-        <span>DAX</span>
-        <span>Azure Synapse</span>
-      </div>
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-badge">Microsoft Fabric</span>
+      <span class="skill-badge">Azure Data Factory</span>
+      <span class="skill-badge">Databricks</span>
+      <span class="skill-badge">Power BI</span>
+      <span class="skill-badge">SSIS / SSRS / SSAS</span>
+      <span class="skill-badge">T-SQL</span>
+      <span class="skill-badge">PySpark</span>
+      <span class="skill-badge">DAX</span>
+      <span class="skill-badge">Snowflake</span>
+      <span class="skill-badge">Azure DevOps</span>
+      <span class="skill-badge">Python</span>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>Retail & Workforce Analytics</h3>
-      <p>
-        Store performance reporting, workforce optimization dashboards, operational metrics, and staffing analytics solutions.
-      </p>
-      <div class="tech-badges">
-        <span>SQL</span>
-        <span>Power BI</span>
-        <span>Azure Data Factory</span>
-      </div>
+  <section>
+    <h2>Industry Experience</h2>
+    <div class="exp-item">
+      <div class="exp-title">Healthcare & Clinical Research Analytics</div>
+      <ul><li>HIPAA-compliant reporting and analytics solutions</li><li>Clinical operations and regulatory reporting</li><li>Enterprise reporting modernization initiatives</li></ul>
     </div>
-
-    <div class="project-card">
-      <h3>Marketing & Customer Analytics</h3>
-      <p>
-        Customer acquisition, retention, campaign ROI reporting, funnel analytics, and business intelligence solutions.
-      </p>
-      <div class="tech-badges">
-        <span>Power BI</span>
-        <span>Python</span>
-        <span>Analytics</span>
-      </div>
+    <div class="exp-item">
+      <div class="exp-title">Insurance & Workforce Analytics</div>
+      <ul><li>Executive KPI dashboards and workforce reporting</li><li>Compensation, headcount, and attrition analytics</li><li>Advanced Power BI and DAX solutions</li></ul>
     </div>
+    <div class="exp-item">
+      <div class="exp-title">Retail Operations Analytics</div>
+      <ul><li>Store performance and workforce optimization reporting</li><li>Sales and operational analytics solutions</li><li>Automated reporting pipelines and dashboards</li></ul>
+    </div>
+    <div class="exp-item">
+      <div class="exp-title">Marketing & Customer Intelligence</div>
+      <ul><li>Campaign ROI and funnel performance analysis</li><li>Customer acquisition and retention analytics</li><li>Business intelligence reporting solutions</li></ul>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <section style="text-align:center;">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:anumandava2@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/AnuMandav" target="_blank">💻 GitHub</a>
+    </div>
+  </section>
 
-<section>
-  <h2>Technical Skills</h2>
-  <div class="skills-grid">
-    <span class="skill-badge">Microsoft Fabric</span>
-    <span class="skill-badge">Azure Data Factory</span>
-    <span class="skill-badge">Databricks</span>
-    <span class="skill-badge">Power BI</span>
-    <span class="skill-badge">SSIS / SSRS / SSAS</span>
-    <span class="skill-badge">T-SQL</span>
-    <span class="skill-badge">PySpark</span>
-    <span class="skill-badge">DAX</span>
-    <span class="skill-badge">Snowflake</span>
-    <span class="skill-badge">Azure DevOps</span>
-    <span class="skill-badge">Python</span>
-  </div>
-</section>
+  <footer>
+    © 2024 Anu Mandava. All Rights Reserved.
+  </footer>
+</main>
 
-<section>
-  <h2>Industry Experience</h2>
-
-  <div class="exp-item">
-    <div class="exp-title">Healthcare & Clinical Research Analytics</div>
-    <ul>
-      <li>HIPAA-compliant reporting and analytics solutions</li>
-      <li>Clinical operations and regulatory reporting</li>
-      <li>Enterprise reporting modernization initiatives</li>
-    </ul>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-title">Insurance & Workforce Analytics</div>
-    <ul>
-      <li>Executive KPI dashboards and workforce reporting</li>
-      <li>Compensation, headcount, and attrition analytics</li>
-      <li>Advanced Power BI and DAX solutions</li>
-    </ul>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-title">Retail Operations Analytics</div>
-    <ul>
-      <li>Store performance and workforce optimization reporting</li>
-      <li>Sales and operational analytics solutions</li>
-      <li>Automated reporting pipelines and dashboards</li>
-    </ul>
-  </div>
-
-  <div class="exp-item">
-    <div class="exp-title">Marketing & Customer Intelligence</div>
-    <ul>
-      <li>Campaign ROI and funnel performance analysis</li>
-      <li>Customer acquisition and retention analytics</li>
-      <li>Business intelligence reporting solutions</li>
-    </ul>
-  </div>
-
-</section>
-
-<section style="text-align:center;">
-  <h2>Contact</h2>
-
-  <div class="contact-links">
-    <a href="mailto:anumandava2@gmail.com">📧 Email</a>
-    <a href="https://www.linkedin.com/in/anu-mandava-410331155/" target="_blank">🔗 LinkedIn</a>
-    <a href="https://github.com/AnuMandav" target="_blank">💻 GitHub</a>
-  </div>
-
-</section>
-
-<footer>
-  © 2024 Anu Mandava. All Rights Reserved.
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
