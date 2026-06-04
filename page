@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+</head>
+
+<body style="font-family: Arial; text-align: center;">
+
+  <h1>Hi, I'm Anu 👋</h1>
+
+  <p>I am learning Web Development and GitHub.</p>
+
+  <h2>About Me</h2>
+  <p>I am a beginner building my first portfolio website.</p>
+
+  <h2>Projects</h2>
+  <p>Coming soon...</p>
+
+  <h2>Contact</h2>
+  <p>Email: your-email@example.com</p>
+
+</body>
+</html>
