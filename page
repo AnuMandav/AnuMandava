@@ -1,23 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Portfolio</title>
-</head>
+<body>
 
-<body style="font-family: Arial; text-align: center;">
+  <header class="hero">
+    <h1>Anu Mandava</h1>
+    <p>Senior BI & Data Engineer | Azure | Microsoft Fabric | Power BI</p>
+  </header>
 
-  <h1>Hi, I'm Anu 👋</h1>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Senior Data / BI Engineer with 7+ years of experience building enterprise-scale analytics platforms,
+      cloud data engineering solutions, and BI reporting systems across Azure, Microsoft Fabric, and Power BI.
+    </p>
+  </section>
 
-  <p>I am learning Web Development and GitHub.</p>
+  <section class="skills">
+    <h2>Core Skills</h2>
+    <div class="card">
+      <p>Microsoft Fabric • Azure Data Factory • Databricks</p>
+      <p>Power BI • SSRS • SSIS • SSAS</p>
+      <p>SQL • DAX • PySpark • Data Modeling</p>
+    </div>
+  </section>
 
-  <h2>About Me</h2>
-  <p>I am a beginner building my first portfolio website.</p>
+  <section class="experience">
+    <h2>Experience Highlights</h2>
 
-  <h2>Projects</h2>
-  <p>Coming soon...</p>
+    <div class="card">
+      <p>✔ Built enterprise Microsoft Fabric data platform</p>
+      <p>✔ Designed scalable BI dashboards (HR, Finance, Clinical)</p>
+      <p>✔ Migrated legacy systems to Azure & Fabric</p>
+      <p>✔ Implemented CI/CD for BI & analytics systems</p>
+    </div>
 
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: anumandava2@gmail.com</p>
+  </section>
 
 </body>
-</html>
