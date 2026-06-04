@@ -5,37 +5,60 @@ body {
   color: #e5e7eb;
 }
 
-header {
+/* HERO */
+.hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 110px 20px;
 }
 
-header h1 {
-  font-size: 42px;
+.hero h1 {
+  font-size: 54px;
   margin: 0;
+  font-weight: 700;
 }
 
-header p {
+.hero p {
   color: #94a3b8;
   font-size: 18px;
+  margin-top: 10px;
 }
 
+/* SECTIONS */
 section {
-  max-width: 800px;
-  margin: 60px auto;
+  max-width: 900px;
+  margin: 70px auto;
   padding: 0 20px;
 }
 
 h2 {
+  font-size: 22px;
   border-left: 4px solid #3b82f6;
   padding-left: 10px;
   margin-bottom: 20px;
 }
 
+/* CARDS (IMPORTANT UPGRADE) */
 .card {
   background: #111827;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 12px;
   margin-top: 10px;
-  line-height: 1.6;
+  line-height: 1.7;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* SKILLS IMPROVEMENT */
+.skills .card p {
+  margin: 8px 0;
+  color: #cbd5e1;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.contact p {
+  color: #94a3b8;
 }
