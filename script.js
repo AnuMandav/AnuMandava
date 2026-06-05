@@ -20,27 +20,22 @@ function showContent() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Down arrow click
+// Down arrow click ONLY — this hides content
 downArrow.addEventListener('click', () => {
   if (contentVisible) {
     hideContent();
-    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
   }
 });
 
-// Home button click
+// Home button click — brings content back
 homeBtn.addEventListener('click', () => {
   if (!contentVisible) {
     showContent();
   }
 });
 
-// Scroll: hide content when scrolling down
-window.addEventListener('scroll', () => {
-  if (contentVisible && window.scrollY > 50) {
-    hideContent();
-  }
-});
+// NO auto-hide on scroll — removed that functionality
+// You can now scroll freely and read everything
 
 // Ensure correct initial state
 showContent();
