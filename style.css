@@ -11,12 +11,12 @@ body {
 .hero {
   text-align: center;
   padding: 80px 20px 60px;
-  transition: all 0.4s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 /* Hero hide animation for down arrow click */
 .hero.hide-hero {
-  animation: slideDownFade 0.4s ease-out forwards;
+  animation: slideDownFade 0.8s ease-out forwards;
 }
 
 @keyframes slideDownFade {
@@ -31,9 +31,9 @@ body {
   }
 }
 
-/* Hero animate on page load - slide up */
+/* Hero animate on page load - slide up (doubled timing) */
 .hero-animate {
-  animation: slideUp 0.5s ease-out;
+  animation: slideUp 1.6s ease-out;
 }
 
 @keyframes slideUp {
@@ -47,13 +47,14 @@ body {
   }
 }
 
-/* Contact icons bounce animation */
+/* Contact icons bounce animation (doubled timing) */
 .hero-contact {
   display: flex;
-  gap: 24px;
+  gap: 30px;
   justify-content: center;
-  margin-top: 40px;
-  animation: bounceIn 0.6s ease-out 0.3s both;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  animation: bounceIn 1.8s ease-out 0.3s both;
 }
 
 @keyframes bounceIn {
@@ -74,20 +75,34 @@ body {
   }
 }
 
-.hero-contact a {
-  color: #60a5fa;
+/* Pill Shape Contact Links */
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px;
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  border-radius: 40px;
+  color: #e5e7eb;
   text-decoration: none;
+  font-size: 16px;
   font-weight: 500;
-  padding: 8px 16px;
-  background: #111827;
-  border-radius: 30px;
-  border: 1px solid #1f2937;
-  transition: all 0.2s;
+  transition: all 0.4s ease;
 }
 
-.hero-contact a:hover {
-  border-color: #3b82f6;
+.contact-link:hover {
   background: #1e293b;
+  border-color: #60a5fa;
+  color: #60a5fa;
+  transform: translateY(-3px);
+}
+
+.contact-link svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
 }
 
 .hero h1 {
@@ -165,7 +180,7 @@ body {
   min-width: 180px;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s;
+  transition: all 0.4s;
   display: flex;
   flex-direction: column;
 }
@@ -181,7 +196,7 @@ body {
   color: #e5e7eb;
   text-decoration: none;
   font-size: 14px;
-  transition: all 0.2s;
+  transition: all 0.3s;
   background: transparent;
 }
 
@@ -208,7 +223,7 @@ body {
   display: none;
   opacity: 0;
   transform: translateX(20px);
-  transition: all 0.3s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .home-btn.show-home {
@@ -227,10 +242,10 @@ body {
   display: none;
 }
 
-/* About Me section slide up animation when appearing */
+/* About Me section slide up animation */
 .main-content.show-content {
   display: block;
-  animation: slideUpFade 0.5s ease-out;
+  animation: slideUpFade 0.8s ease-out;
 }
 
 @keyframes slideUpFade {
@@ -271,7 +286,7 @@ h2 {
   background: #111827;
   border-radius: 12px;
   padding: 24px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #1f2937;
 }
 
@@ -325,7 +340,7 @@ h2 {
   border-radius: 40px;
   font-size: 14px;
   color: #cbd5e1;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .skill-badge:hover {
@@ -349,6 +364,7 @@ footer {
   .hero .tagline { font-size: 18px; }
   .hero .bio { font-size: 16px; }
   .projects-grid { grid-template-columns: 1fr; }
-  .hero-contact { gap: 12px; flex-wrap: wrap; }
-  .hero-contact a { padding: 6px 12px; font-size: 12px; }
+  .hero-contact { gap: 15px; }
+  .contact-link { padding: 6px 16px; font-size: 12px; }
+  .contact-link svg { width: 18px; height: 18px; }
 }
