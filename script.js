@@ -1,41 +1,50 @@
 // Elements
 const downArrow = document.getElementById('downArrow');
+const heroSection = document.getElementById('heroSection');
 const mainContent = document.getElementById('mainContent');
 const homeBtn = document.getElementById('homeBtn');
 
-let contentVisible = true;
+let contentVisible = false; // Content starts hidden
+let heroVisible = true; // Hero starts visible
 
-function hideContent() {
-  mainContent.classList.add('hidden');
-  downArrow.style.display = 'none';
-  homeBtn.style.display = 'inline-block';
-  contentVisible = false;
+// Function to hide hero and show content
+function showContent() {
+  heroSection.classList.add('hidden');
+  mainContent.classList.add('visible');
+  homeBtn.classList.add('visible');
+  heroVisible = false;
+  contentVisible = true;
 }
 
-function showContent() {
-  mainContent.classList.remove('hidden');
-  downArrow.style.display = 'inline-block';
-  homeBtn.style.display = 'none';
-  contentVisible = true;
+// Function to show hero and hide content (HOME)
+function showHero() {
+  heroSection.classList.remove('hidden');
+  mainContent.classList.remove('visible');
+  homeBtn.classList.remove('visible');
+  heroVisible = true;
+  contentVisible = false;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Down arrow click ONLY — this hides content
+// Down arrow click
 downArrow.addEventListener('click', () => {
-  if (contentVisible) {
-    hideContent();
-  }
-});
-
-// Home button click — brings content back
-homeBtn.addEventListener('click', () => {
-  if (!contentVisible) {
+  if (heroVisible) {
     showContent();
   }
 });
 
-// NO auto-hide on scroll — removed that functionality
-// You can now scroll freely and read everything
+// Scroll event: if user scrolls down while hero is visible, hide hero
+window.addEventListener('scroll', () => {
+  if (heroVisible && window.scrollY > 30) {
+    showContent();
+  }
+});
 
-// Ensure correct initial state
-showContent();
+// Home button click
+homeBtn.addEventListener('click', () => {
+  if (!heroVisible) {
+    showHero();
+  }
+});
+
+// Initial state: hero visible, content hidden
