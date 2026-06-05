@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add hide animation class to hero
     heroSection.classList.add('hide-hero');
     
-    // Wait for animation to complete (doubled timing: 800ms)
+    // Wait for animation to complete
     setTimeout(() => {
       heroSection.style.display = 'none';
       heroSection.classList.remove('hide-hero');
@@ -32,11 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
       isHeroVisible = false;
       isAnimating = false;
       
-      // Scroll to top of content smoothly
+      // Scroll to the TOP of About Me section
       setTimeout(() => {
-        mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const firstSection = mainContent.querySelector('section');
+        if (firstSection) {
+          firstSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }, 150);
-    }, 800);  // Doubled from 400 to 800
+    }, 800);
   }
 
   function showHeroAndHideContent() {
@@ -67,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Scroll event - lower threshold for easier trigger
+  // Scroll event
   window.addEventListener('scroll', () => {
     if (isHeroVisible && !isAnimating && window.scrollY > 20) {
       hideHeroAndShowContent();
@@ -86,5 +89,5 @@ document.addEventListener('DOMContentLoaded', function() {
   homeBtn.classList.remove('show-home');
   heroSection.style.display = 'block';
   
-  console.log('Initialized with doubled animation timings');
+  console.log('Initialized with fixed scroll position');
 });
