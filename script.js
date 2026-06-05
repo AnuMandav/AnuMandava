@@ -1,30 +1,27 @@
-// Elements
 const downArrow = document.getElementById('downArrow');
 const mainContent = document.getElementById('mainContent');
 const homeBtn = document.getElementById('homeBtn');
 
-let hasScrolledOrClicked = false;
+let contentVisible = true;
 
-// Function to hide content and switch to HOME button
 function hideContent() {
   mainContent.classList.add('hidden');
   downArrow.style.display = 'none';
-  homeBtn.classList.add('visible');
-  hasScrolledOrClicked = true;
+  homeBtn.style.display = 'inline-block';
+  contentVisible = false;
 }
 
-// Function to show content and switch to down arrow
 function showContent() {
   mainContent.classList.remove('hidden');
   downArrow.style.display = 'inline-block';
-  homeBtn.classList.remove('visible');
-  hasScrolledOrClicked = false;
+  homeBtn.style.display = 'none';
+  contentVisible = true;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Down arrow click
 downArrow.addEventListener('click', () => {
-  if (!hasScrolledOrClicked) {
+  if (contentVisible) {
     hideContent();
     window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
   }
@@ -32,13 +29,17 @@ downArrow.addEventListener('click', () => {
 
 // Home button click
 homeBtn.addEventListener('click', () => {
-  showContent();
+  if (!contentVisible) {
+    showContent();
+  }
 });
 
-// Scroll event
+// Scroll: hide content when scrolling down
 window.addEventListener('scroll', () => {
-  if (hasScrolledOrClicked) return;
-  if (window.scrollY > 50) {
+  if (contentVisible && window.scrollY > 50) {
     hideContent();
   }
 });
+
+// Ensure correct initial state
+showContent();
