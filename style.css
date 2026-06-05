@@ -4,12 +4,90 @@ body {
   background: #0b1220;
   color: #e5e7eb;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Hero */
 .hero {
   text-align: center;
   padding: 80px 20px 60px;
+  transition: all 0.4s ease-out;
+}
+
+/* Hero hide animation for down arrow click */
+.hero.hide-hero {
+  animation: slideDownFade 0.4s ease-out forwards;
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+    display: none;
+  }
+}
+
+/* Hero animate on page load - slide up */
+.hero-animate {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contact icons bounce animation */
+.hero-contact {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
+  animation: bounceIn 0.6s ease-out 0.3s both;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-contact a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  background: #111827;
+  border-radius: 30px;
+  border: 1px solid #1f2937;
+  transition: all 0.2s;
+}
+
+.hero-contact a:hover {
+  border-color: #3b82f6;
+  background: #1e293b;
 }
 
 .hero h1 {
@@ -128,6 +206,15 @@ body {
   font-weight: 500;
   z-index: 1000;
   display: none;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease-out;
+}
+
+.home-btn.show-home {
+  display: inline-block;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .home-btn:hover {
@@ -138,6 +225,23 @@ body {
 /* Main Content */
 .main-content {
   display: none;
+}
+
+/* About Me section slide up animation when appearing */
+.main-content.show-content {
+  display: block;
+  animation: slideUpFade 0.5s ease-out;
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Sections */
@@ -229,31 +333,6 @@ h2 {
   color: #60a5fa;
 }
 
-/* Contact */
-.contact-links {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-
-.contact-links a {
-  color: #60a5fa;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 16px;
-  background: #111827;
-  border-radius: 30px;
-  border: 1px solid #1f2937;
-  transition: all 0.2s;
-}
-
-.contact-links a:hover {
-  border-color: #3b82f6;
-  background: #1e293b;
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -270,4 +349,6 @@ footer {
   .hero .tagline { font-size: 18px; }
   .hero .bio { font-size: 16px; }
   .projects-grid { grid-template-columns: 1fr; }
+  .hero-contact { gap: 12px; flex-wrap: wrap; }
+  .hero-contact a { padding: 6px 12px; font-size: 12px; }
 }
