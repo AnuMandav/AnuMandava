@@ -1,50 +1,45 @@
-// Elements
-const downArrow = document.getElementById('downArrow');
+// Get elements
 const heroSection = document.getElementById('heroSection');
 const mainContent = document.getElementById('mainContent');
 const homeBtn = document.getElementById('homeBtn');
+const downArrow = document.getElementById('downArrow');
 
-let contentVisible = false; // Content starts hidden
-let heroVisible = true; // Hero starts visible
+let isHeroVisible = true;
 
-// Function to hide hero and show content
-function showContent() {
-  heroSection.classList.add('hidden');
-  mainContent.classList.add('visible');
-  homeBtn.classList.add('visible');
-  heroVisible = false;
-  contentVisible = true;
+// Function to hide hero, show content and HOME button
+function hideHeroAndShowContent() {
+  heroSection.classList.add('hide-hero');
+  mainContent.classList.add('show-content');
+  homeBtn.classList.add('show-home');
+  isHeroVisible = false;
 }
 
-// Function to show hero and hide content (HOME)
-function showHero() {
-  heroSection.classList.remove('hidden');
-  mainContent.classList.remove('visible');
-  homeBtn.classList.remove('visible');
-  heroVisible = true;
-  contentVisible = false;
+// Function to show hero, hide content and HOME button
+function showHeroAndHideContent() {
+  heroSection.classList.remove('hide-hero');
+  mainContent.classList.remove('show-content');
+  homeBtn.classList.remove('show-home');
+  isHeroVisible = true;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Down arrow click
 downArrow.addEventListener('click', () => {
-  if (heroVisible) {
-    showContent();
+  if (isHeroVisible) {
+    hideHeroAndShowContent();
   }
 });
 
-// Scroll event: if user scrolls down while hero is visible, hide hero
+// Scroll event: if hero visible and user scrolls down
 window.addEventListener('scroll', () => {
-  if (heroVisible && window.scrollY > 30) {
-    showContent();
+  if (isHeroVisible && window.scrollY > 30) {
+    hideHeroAndShowContent();
   }
 });
 
-// Home button click
+// HOME button click
 homeBtn.addEventListener('click', () => {
-  if (!heroVisible) {
-    showHero();
+  if (!isHeroVisible) {
+    showHeroAndHideContent();
   }
 });
-
-// Initial state: hero visible, content hidden
