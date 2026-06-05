@@ -1,18 +1,23 @@
-/* Hero section hidden state */
-.hero.hidden {
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.hero.hide-hero {
   display: none;
 }
 
-/* Main content hidden initially */
+/* Main content */
 .main-content {
   display: none;
 }
 
-.main-content.visible {
+.main-content.show-content {
   display: block;
 }
 
-/* HOME button */
+/* HOME button - fixed at top right */
 .home-btn {
   position: fixed;
   top: 20px;
@@ -29,11 +34,30 @@
   display: none;
 }
 
-.home-btn.visible {
+.home-btn.show-home {
   display: inline-block;
 }
 
 .home-btn:hover {
   background: #60a5fa;
   color: #0b1220;
+}
+
+/* Down arrow */
+.down-arrow {
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  display: inline-block;
+  color: #94a3b8;
+  margin-top: 40px;
+  transition: color 0.2s;
+}
+
+.down-arrow:hover {
+  color: #60a5fa;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
