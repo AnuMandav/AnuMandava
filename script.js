@@ -8,27 +8,29 @@ let isHeroVisible = true;
 
 // Function to hide hero, show content and HOME button
 function hideHeroAndShowContent() {
-  heroSection.classList.add('hide-hero');
-  mainContent.classList.add('show-content');
-  homeBtn.classList.add('show-home');
+  heroSection.style.display = 'none';
+  mainContent.style.display = 'block';
+  homeBtn.style.display = 'inline-block';
   isHeroVisible = false;
 }
 
 // Function to show hero, hide content and HOME button
 function showHeroAndHideContent() {
-  heroSection.classList.remove('hide-hero');
-  mainContent.classList.remove('show-content');
-  homeBtn.classList.remove('show-home');
+  heroSection.style.display = 'block';
+  mainContent.style.display = 'none';
+  homeBtn.style.display = 'none';
   isHeroVisible = true;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Down arrow click
-downArrow.addEventListener('click', () => {
-  if (isHeroVisible) {
-    hideHeroAndShowContent();
-  }
-});
+if (downArrow) {
+  downArrow.addEventListener('click', () => {
+    if (isHeroVisible) {
+      hideHeroAndShowContent();
+    }
+  });
+}
 
 // Scroll event: if hero visible and user scrolls down
 window.addEventListener('scroll', () => {
@@ -38,8 +40,15 @@ window.addEventListener('scroll', () => {
 });
 
 // HOME button click
-homeBtn.addEventListener('click', () => {
-  if (!isHeroVisible) {
-    showHeroAndHideContent();
-  }
-});
+if (homeBtn) {
+  homeBtn.addEventListener('click', () => {
+    if (!isHeroVisible) {
+      showHeroAndHideContent();
+    }
+  });
+}
+
+// Ensure main content starts hidden
+mainContent.style.display = 'none';
+homeBtn.style.display = 'none';
+heroSection.style.display = 'block';
