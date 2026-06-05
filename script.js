@@ -48,7 +48,7 @@ if (homeBtn) {
   });
 }
 
-// Ensure main content starts hidden
+// Initialize
 mainContent.style.display = 'none';
 homeBtn.style.display = 'none';
 heroSection.style.display = 'block';
