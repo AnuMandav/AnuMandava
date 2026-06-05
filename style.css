@@ -64,11 +64,11 @@ body {
 }
 .home-btn:hover { color: #60a5fa; }
 
-/* Top Left Hover Menu (transparent dropdown, no numbers) */
-.top-left-menu {
+/* Top RIGHT Hover Menu (fixed position) */
+.top-right-menu {
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 1000;
 }
 
@@ -89,10 +89,11 @@ body {
   border-color: #60a5fa;
 }
 
+/* Dropdown — NO background, transparent */
 .menu-dropdown {
   position: absolute;
   top: 55px;
-  left: 0;
+  right: 0;
   background: transparent;
   border: none;
   padding: 8px 0;
@@ -104,7 +105,7 @@ body {
   flex-direction: column;
 }
 
-.top-left-menu:hover .menu-dropdown {
+.top-right-menu:hover .menu-dropdown {
   opacity: 1;
   visibility: visible;
 }
