@@ -18,25 +18,24 @@
   </div>
 </div>
 
-<!-- HOME Button (appears after hero hides) -->
+<!-- HOME Button (fixed at top right, appears after scroll/click) -->
 <button class="home-btn" id="homeBtn">HOME</button>
 
-<!-- Hero Section (visible initially, hides on scroll/click) -->
-<header class="hero" id="heroSection">
+<!-- Hero Section -->
+<div class="hero" id="heroSection">
   <h1>Anu Mandava</h1>
   <div class="tagline">Senior Business Intelligence Engineer</div>
   <div class="bio">📍 Toronto, Ontario, Canada</div>
   <div class="bio">Azure • Microsoft Fabric • Power BI</div>
-  
   <div class="down-arrow" id="downArrow">
     <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M12 5v14M19 12l-7 7-7-7"/>
     </svg>
   </div>
-</header>
+</div>
 
-<!-- Main Content (hidden initially, appears after hero hides) -->
-<main class="main-content" id="mainContent">
+<!-- Main Content (About Me + Projects) -->
+<div class="main-content" id="mainContent">
   
   <section>
     <h2>About Me</h2>
@@ -58,23 +57,23 @@
     <div class="projects-grid">
       <div class="project-card">
         <h3>🏥 Healthcare Analytics</h3>
-        <p>HIPAA-compliant clinical and healthcare reporting solutions supporting research operations, regulatory reporting, and enterprise analytics.</p>
-        <div class="tech-badges"><span>Microsoft Fabric</span><span>Power BI</span><span>Azure</span></div>
+        <p>HIPAA-compliant clinical and healthcare reporting solutions.</p>
+        <div class="tech-badges"><span>Fabric</span><span>Power BI</span><span>Azure</span></div>
       </div>
       <div class="project-card">
         <h3>📊 Insurance Analytics</h3>
-        <p>Workforce planning, compensation reporting, executive KPI dashboards, and HR analytics solutions for enterprise organizations.</p>
-        <div class="tech-badges"><span>Power BI</span><span>DAX</span><span>Azure Synapse</span></div>
+        <p>Workforce planning, compensation reporting, executive KPI dashboards.</p>
+        <div class="tech-badges"><span>Power BI</span><span>DAX</span><span>Synapse</span></div>
       </div>
       <div class="project-card">
-        <h3>🏬 Retail & Workforce Analytics</h3>
-        <p>Store performance reporting, workforce optimization dashboards, operational metrics, and staffing analytics solutions.</p>
-        <div class="tech-badges"><span>SQL</span><span>Power BI</span><span>Azure Data Factory</span></div>
+        <h3>🏬 Retail Analytics</h3>
+        <p>Store performance, workforce optimization, sales analytics.</p>
+        <div class="tech-badges"><span>SQL</span><span>Power BI</span><span>ADF</span></div>
       </div>
       <div class="project-card">
-        <h3>📈 Marketing & Customer Analytics</h3>
-        <p>Customer acquisition, retention, campaign ROI reporting, funnel analytics, and business intelligence solutions.</p>
-        <div class="tech-badges"><span>Power BI</span><span>Python</span><span>Analytics</span></div>
+        <h3>📈 Customer Analytics</h3>
+        <p>Campaign ROI, funnel performance, retention analytics.</p>
+        <div class="tech-badges"><span>Power BI</span><span>Python</span></div>
       </div>
     </div>
   </section>
@@ -86,12 +85,11 @@
       <span class="skill-badge">Azure Data Factory</span>
       <span class="skill-badge">Databricks</span>
       <span class="skill-badge">Power BI</span>
-      <span class="skill-badge">SSIS / SSRS / SSAS</span>
+      <span class="skill-badge">SSIS/SSRS/SSAS</span>
       <span class="skill-badge">T-SQL</span>
       <span class="skill-badge">PySpark</span>
       <span class="skill-badge">DAX</span>
       <span class="skill-badge">Snowflake</span>
-      <span class="skill-badge">Azure DevOps</span>
       <span class="skill-badge">Python</span>
     </div>
   </section>
@@ -101,23 +99,23 @@
     <div class="projects-grid">
       <div class="project-card">
         <h3>🏥 Healthcare & Clinical Research</h3>
-        <p>HIPAA-compliant reporting, clinical operations, regulatory reporting, enterprise modernization initiatives.</p>
-        <div class="tech-badges"><span>Fabric</span><span>Power BI</span><span>Azure</span></div>
+        <p>HIPAA-compliant reporting, clinical operations, regulatory reporting.</p>
+        <div class="tech-badges"><span>Fabric</span><span>Power BI</span></div>
       </div>
       <div class="project-card">
         <h3>📊 Insurance & Workforce Analytics</h3>
-        <p>Executive KPI dashboards, compensation, headcount, attrition analytics, advanced DAX solutions.</p>
-        <div class="tech-badges"><span>Power BI</span><span>DAX</span><span>SQL</span></div>
+        <p>Executive KPI dashboards, compensation, headcount, attrition analytics.</p>
+        <div class="tech-badges"><span>Power BI</span><span>DAX</span></div>
       </div>
       <div class="project-card">
         <h3>🏬 Retail Operations Analytics</h3>
-        <p>Store performance, workforce optimization, sales analytics, automated reporting pipelines.</p>
-        <div class="tech-badges"><span>ADF</span><span>Power BI</span><span>SQL</span></div>
+        <p>Store performance, workforce optimization, sales analytics.</p>
+        <div class="tech-badges"><span>Power BI</span><span>ADF</span></div>
       </div>
       <div class="project-card">
-        <h3>📈 Marketing & Customer Intelligence</h3>
-        <p>Campaign ROI, funnel performance, customer acquisition, retention analytics.</p>
-        <div class="tech-badges"><span>Power BI</span><span>Python</span><span>Analytics</span></div>
+        <h3>📈 Marketing Intelligence</h3>
+        <p>Campaign ROI, funnel performance, retention analytics.</p>
+        <div class="tech-badges"><span>Power BI</span><span>Python</span></div>
       </div>
     </div>
   </section>
@@ -134,7 +132,7 @@
   <footer>
     © Anu Mandava || Business Intelligence Engineer
   </footer>
-</main>
+</div>
 
 <script src="script.js"></script>
 </body>
