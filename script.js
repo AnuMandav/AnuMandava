@@ -1,3 +1,4 @@
+// Elements
 const downArrow = document.getElementById('downArrow');
 const mainContent = document.getElementById('mainContent');
 const homeBtn = document.getElementById('homeBtn');
@@ -38,6 +39,22 @@ homeBtn.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
   if (contentVisible && window.scrollY > 50) {
     hideContent();
+  }
+});
+
+// Menu click toggle
+const menuBtn = document.querySelector('.menu-btn');
+const menuDropdown = document.querySelector('.menu-dropdown');
+
+menuBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  menuDropdown.classList.toggle('show');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+  if (!menuBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
+    menuDropdown.classList.remove('show');
   }
 });
 
