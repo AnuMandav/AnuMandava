@@ -17,22 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
     if (isAnimating) return;
     isAnimating = true;
     
-    // Add hide animation class to hero
     heroSection.classList.add('hide-hero');
     
-    // Wait for animation to complete
     setTimeout(() => {
       heroSection.style.display = 'none';
       heroSection.classList.remove('hide-hero');
       
-      // Show main content with animation
       mainContent.classList.add('show-content');
       homeBtn.classList.add('show-home');
       
       isHeroVisible = false;
       isAnimating = false;
       
-      // Scroll to the TOP of About Me section
       setTimeout(() => {
         const firstSection = mainContent.querySelector('section');
         if (firstSection) {
@@ -46,48 +42,76 @@ document.addEventListener('DOMContentLoaded', function() {
     if (isAnimating) return;
     isAnimating = true;
     
-    // Hide main content and home button
     mainContent.classList.remove('show-content');
     homeBtn.classList.remove('show-home');
     
-    // Show hero
     heroSection.style.display = 'block';
     
-    // Trigger reflow for animation
     void heroSection.offsetWidth;
     
     isHeroVisible = true;
     isAnimating = false;
     
-    // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Down arrow click
   downArrow.addEventListener('click', () => {
     if (isHeroVisible && !isAnimating) {
       hideHeroAndShowContent();
     }
   });
 
-  // Scroll event
   window.addEventListener('scroll', () => {
     if (isHeroVisible && !isAnimating && window.scrollY > 20) {
       hideHeroAndShowContent();
     }
   });
 
-  // HOME button click
   homeBtn.addEventListener('click', () => {
     if (!isHeroVisible && !isAnimating) {
       showHeroAndHideContent();
     }
   });
 
-  // Initialize
   mainContent.classList.remove('show-content');
   homeBtn.classList.remove('show-home');
   heroSection.style.display = 'block';
   
   console.log('Initialized with fixed scroll position');
+
+  // RESUME MODAL
+  const resumeModal = document.getElementById('resumeModal');
+  const resumeLink = document.getElementById('resumeLink');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+
+  if (resumeLink && resumeModal) {
+    resumeLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      resumeModal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
+  if (closeModalBtn && resumeModal) {
+    closeModalBtn.addEventListener('click', function() {
+      resumeModal.classList.remove('show');
+      document.body.style.overflow = '';
+    });
+  }
+
+  if (resumeModal) {
+    resumeModal.addEventListener('click', function(e) {
+      if (e.target === this) {
+        resumeModal.classList.remove('show');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && resumeModal && resumeModal.classList.contains('show')) {
+      resumeModal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  });
 });
