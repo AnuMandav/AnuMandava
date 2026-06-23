@@ -90,4 +90,40 @@ document.addEventListener('DOMContentLoaded', function() {
   heroSection.style.display = 'block';
   
   console.log('Initialized with fixed scroll position');
+
+  // RESUME MODAL
+  const resumeModal = document.getElementById('resumeModal');
+  const resumeLink = document.getElementById('resumeLink');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const backModalBtn = document.getElementById('backModalBtn');
+
+  resumeLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    resumeModal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  });
+
+  closeModalBtn.addEventListener('click', function() {
+    resumeModal.classList.remove('show');
+    document.body.style.overflow = '';
+  });
+
+  backModalBtn.addEventListener('click', function() {
+    resumeModal.classList.remove('show');
+    document.body.style.overflow = '';
+  });
+
+  resumeModal.addEventListener('click', function(e) {
+    if (e.target === this) {
+      resumeModal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && resumeModal.classList.contains('show')) {
+      resumeModal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  });
 });
